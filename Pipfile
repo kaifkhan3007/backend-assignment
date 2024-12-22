@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "~=0.95.0"
+uvicorn = {extras = ["standard"], version = "~=0.21.1"}
+sqlalchemy = "~=1.4.41"
+pydantic = "~=1.10.7"
+python-dotenv = "~=1.0.0"  # Added for environment variable management
+
+[dev-packages]
+pytest = "~=7.3.1"
+httpx = "~=0.24.0"
+black = "~=23.3.0"  # Added for code formatting
+flake8 = "~=6.0.0"  # Added for linting
+mypy = "~=1.2.0"  # Added for type checking
+pytest-cov = "~=4.0.0"  # Added for test coverage
+
+[requires]
+python_version = "3.9"
